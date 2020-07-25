@@ -1,0 +1,551 @@
+{% load static %}
+
+{% block maincontent  %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Yogesh Resume</title>
+<!--
+
+Template 2102 Constructive
+
+http://www.tooplate.com/view/2102-constructive
+
+-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+	<script>
+		var renderPage = true;
+
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   		/* Microsoft Internet Explorer detected in. */
+   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
+
+<body>
+	<!-- Loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	
+	<!-- Page Content -->
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
+
+			<!-- Sidebar -->
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-page="#tm-section-1">
+									<i class="fa fa-id-card tm-nav-fa-icon"></i>
+									<span>Yogesh's Resume</span>
+								</a>
+							</li>
+							<li>
+								<a href="#products" id="tmNavLink2" class="scrolly" data-page="#tm-section-2" data-page-type="carousel">
+									<i class="fas fa-tasks tm-nav-fa-icon"></i>
+									<span>Work Experience</span>
+								</a>
+							</li>							
+							<li>
+								<a href="#company" id="tmNavLink3" class="scrolly" data-page="#tm-section-3">
+									<i class="fas fa-product-hunt tm-nav-fa-icon"></i>
+									<span>Projects Undertaken</span>
+								</a>
+							</li>
+							<li>
+								<a href="#company" id="tmNavLink4" class="scrolly" data-page="#tm-section-4">
+									<i class="fas fa-wrench tm-nav-fa-icon"></i>
+									<span>Technical Skills</span>
+								</a>
+							</li>
+							<li>
+								<a href="#company" id="tmNavLink5" class="scrolly" data-page="#tm-section-5">
+									<i class="fa fa-university tm-nav-fa-icon"></i>
+									<span>Educational Qualification</span>
+								</a>
+							</li>
+							<li>
+								<a href="#company" id="tmNavLink6" class="scrolly" data-page="#tm-section-6">
+									<i class="fas fa-users tm-nav-fa-icon"></i>
+									<span>Strengths</span>
+								</a>
+							</li>
+							<li>
+								<a href="#company" id="tmNavLink7" class="scrolly" data-page="#tm-section-7">
+									<i class="fas fa-users tm-nav-fa-icon"></i>
+									<span>Personal Details</span>
+								</a>
+							</li>
+							<li>
+								<a href="#contact" id="tmNavLink8" class="scrolly" data-page="#tm-section-8">
+									<i class="fas fa-comments tm-nav-fa-icon"></i>
+									<span>Contact Details</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+				<!-- section 1 -->
+				<section id="tm-section-1" class="tm-section">
+					<div class="ml-auto">
+						<header class="mb-4"><h1 class="tm-text-shadow">Career Objective</h1></header>
+						<p class="mb-5 tm-font-big">To work effectively in an organization that will utilize my knowledge and abilities to help the growth of the organization as well as continuously improve my knowledge and skills.</p>
+					</div>
+				</section>
+
+				<!-- section 2 -->
+				<section id="tm-section-2" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Work Experience(Total 3.5 years)</h2></header>		            
+						<ul>
+							<li>
+								<span>I am currently working as Python Developer in Sagveek Technologies Ltd., Shivajinagar, Pune since September 2018</span>
+							</li>
+							<li>
+								<span>Worked with Bharati Vidyapeeth University, Dhankawadi, Pune as Visiting faculty (from June 2017 to April 2018)</span>
+							</li>							
+							<li>
+								<span>Worked with Sanjay Bhokare Group of Institutes, Miraj as Assistant Professor (from June 2016 to Feb 2017)</span>
+							</li>
+						</ul>
+					</div>       		          	
+				</section>
+
+				<!-- section 3 -->
+				<section id="tm-section-3" class="tm-section">						
+					<div class="row mb-4">
+						<header class="col-xl-12"><h2 class="tm-text-shadow">Projects Undertaken</h2></header>		
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="media tm-bg-transparent-black tm-border-white">
+								<div class="media-body">
+									<h3>Guitar tuitions management system</h3>
+									<ul>
+										<li>
+											<span><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap and Django/Python</span>
+										</li>
+										<li>
+											<span><strong>Description:</strong> It is a website that connects the clients with guitar classes online. The students can take appointment for enquiry, can check for the available batch timings, have a look at the videos of students playing guitar, go through the contents and levels of the course, etc.</span>
+										</li>							
+										<li>
+											<span><strong>Responsibilities:</strong>
+												<ul>
+													<li>
+														Involved in various phases of Requirement gathering and Code development
+													</li>
+													<li>
+														Creating Django models for the web application
+													</li>
+													<li>
+														Creating Django views by function and class based approach
+													</li>
+													<li>
+														Responsible for Testing and Bug fixing, Bug Tracking, logging of application
+													</li>
+												</ul>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+						<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="media tm-bg-transparent-black tm-border-white">
+								<div class="media-body">
+									<h3>The FilterKart</h3>
+										<ul>
+										<li>
+											<span><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap and Django/Python</span>
+										</li>
+										<li>
+											<span><strong>Description:</strong> It is used to link different warehouse application with e-commerce application. To understand and propose a standard solution for marketing and selling products by automating the processes involved such that it is easy for anyone to operate and maximum customers can be reached by spreading the roots of company worldwide.</span>
+										</li>							
+										<li>
+											<span><strong>Responsibilities:</strong>
+												<ul>
+													<li>
+														Involved in various phases of Requirement gathering and Code development
+													</li>
+													<li>
+														Created add to carts and checkouts functionality
+													</li>
+													<li>
+														Involved in creating a better UI designs for the ecommerce app
+													</li>
+													<li>
+														Involved in writing of Django MVT Views by function and class based approach
+													</li>
+													<li>
+														Participation in analyzing best solution and algorithm for better performance
+													</li>
+												</ul>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="media tm-bg-transparent-black tm-border-white">
+								<div class="media-body">
+									<h3>Exploratory Data Analysis on sales data</h3>
+									<ul>
+										<li>
+											<span>Uploaded multiple files in pandas</span>
+										</li>
+										<li>
+											<span>Performed data processing on data</span>
+										</li>
+										<li>
+											<span>Handled missing values and performed feature engineering techniques on data</span>
+										</li>
+										<li>
+											<span>Performed data visualization using matplotlib</span>
+										</li>
+										<li>
+											<span>Performed question-answer task on sales data</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>						               
+				</section>
+
+				<!-- section 4 -->
+				<section id="tm-section-4" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Technical Skills</h2></header>		            
+						<ul>
+							<li>
+								<span><strong>Programming Languages:</strong> Python, C, SQL, JavaScript</span>
+							</li>
+							<li>
+								<span><strong>Python Libraries:</strong> Pandas, NumPy, Beautiful Soup</span>
+							</li>							
+							<li>
+								<span><strong>Frameworks:</strong> Django</span>
+							</li>
+							<li>
+								<span><strong>Development Tools:</strong> IDLE, Jupyter Notebook, Jupyter Lab, Sublime-Text, Notepad++, PyCharm</span>
+							</li>
+							<li>
+								<span><strong>Databases:</strong> MySQL, SQLite3</span>
+							</li>
+							<li>
+								<span><strong>Front-end Technologies:</strong> HTML5, CSS3, Bootstrap</span>
+							</li>
+						</ul>
+					</div>       		          	
+				</section>
+
+
+				<!-- section 5 -->
+				<section id="tm-section-5" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Educational qualification</h2></header>		            
+						<ul>
+							<li>
+								<span>M-tech in Thermal Engineering from SPCE, Andheri (W), Mumbai with CPI of 7.42 in May 2016</span>
+							</li>
+							<li>
+								<span>BE (Mechanical) from BMIT, Solapur, under Solapur University with first class and distinction (67.20%) in May 2013</span>
+							</li>							
+							<li>
+								<span>DME from New Polytechnic, Kolhapur, under MSBTE, with first class (74.92%) in July 2010</span>
+							</li>
+						</ul>
+					</div>       		          	
+				</section>
+
+
+				<!-- section 6 -->
+				<section id="tm-section-6" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Strengths</h2></header>		            
+						<ul>
+							<li>
+								<span>Target oriented</span>
+							</li>
+							<li>
+								<span>Quick learner</span>
+							</li>							
+							<li>
+								<span>Adaptability</span>
+							</li>
+							<li>
+								<span>Smart as well as hard working</span>
+							</li>
+							<li>
+								<span>Initiative quality</span>
+							</li>
+						</ul>
+					</div>       		          	
+				</section>
+
+
+				<!-- section 7 -->
+				<section id="tm-section-7" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Personal Details</h2></header>		            
+						<ul>
+							<li>
+								<span><strong>Correspondence Address:</strong> A-405, Tulsi-Ratna, Gat No. 407(P) to 410(P), Borhadewadi, Pune-Nashik Highway, Moshi, Pune-412105</span>
+							</li>
+							<li>
+								<span><strong>Passport no:</strong> N0832916</span>
+							</li>							
+							<li>
+								<span><strong>Date of Birth:</strong> 14th March, 1990</span>
+							</li>
+							<li>
+								<span><strong>Gender:</strong> Male</span>
+							</li>
+							<li>
+								<span><strong>Marital status:</strong> Married</span>
+							</li>
+							<li>
+								<span><strong>Blood group:</strong> A Positive</span>
+							</li>
+							<li>
+								<span><strong>Languages Known:</strong> English, Marathi, and Hindi</span>
+							</li>
+							<li>
+								<span><strong>Hobbies:</strong> Reading books, watching movies, Listening music, Playing Carom</span>
+							</li>
+						</ul>
+					</div>       		          	
+				</section>
+
+
+				<!-- section 8 -->
+				<section id="tm-section-8" class="tm-section tm-section-carousel">
+					<div>
+						<header class="mb-4"><h2 class="tm-text-shadow">Contact Details</h2></header>		            
+						<ul>
+							<li>
+								<span><strong>E-mail:</strong> ybr.14390@gmail.com</span>
+							</li>
+							<li>
+								<span><strong>Mobile:</strong> 7020687544</span>
+							</li>							
+						</ul>
+					</div>       		          	
+				</section>
+			</div>	<!-- .tm-content -->							
+			<footer class="footer-link">
+				<p class="tm-copyright-text">copyright</p>
+			</footer>
+		</div>	<!-- row -->			
+	</div>
+	<div id="preload-01"></div>
+	<div id="preload-02"></div>
+	<div id="preload-03"></div>
+	<div id="preload-04"></div>
+
+	<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script> <!-- Slick Carousel -->
+
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+		// Setup Carousel
+		function setupCarousel() {
+
+			// If current page isn't Carousel page, don't do anything.
+			if($('#tm-section-2').css('display') == "none") {
+			}
+			else {	// If current page is Carousel page, set up the Carousel.
+
+				var slider = $('.tm-img-slider');
+				var windowWidth = $(window).width();
+
+				if (slider.hasClass('slick-initialized')) {
+					slider.slick('destroy');
+				}
+
+				if(windowWidth < 640) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 1,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else if(windowWidth < 992) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 2,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else {
+					// Slick carousel
+	              	slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 3,
+	              		slidesToScroll: 2
+	              	});
+				}
+
+				// Init Magnific Popup
+				$('.tm-img-slider').magnificPopup({
+				  delegate: 'a', // child items selector, by clicking on it popup will open
+				  type: 'image',
+				  gallery: {enabled:true}
+				  // other options
+				});
+      		}
+  		}
+
+  		// Setup Nav
+  		function setupNav() {
+  			// Add Event Listener to each Nav item
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+		    	
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+		    	
+		    	setupCarousel();
+		    	setupFooter();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });	    
+  		}
+
+  		function changePage(currentNavItem) {
+  			// Update Nav items
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	// Show current page
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	// Change background image
+	    	var bgImg = currentNavItem.data("bgImg");
+	    	$.backstretch("img/" + bgImg);		    	
+  		}
+
+  		// Setup Nav Toggle Button
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+  		// If there is enough room, stick the footer at the bottom of page content.
+  		// If not, place it after the page content
+  		function setupFooter() {
+  			
+  			var padding = 100;
+  			var footerPadding = 40;
+  			var mainContent = $("section"+currentPageID);
+  			var mainContentHeight = mainContent.outerHeight(true);
+  			var footer = $(".footer-link");
+  			var footerHeight = footer.outerHeight(true);
+  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			var windowHeight = $(window).height();		
+
+  			if(totalPageHeight > windowHeight){
+  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
+  				footer.css("bottom", footerHeight + "px");  			
+  			}
+  			else {
+  				$(".tm-content").css("margin-bottom", "0");
+  				footer.css("bottom", "20px");  				
+  			}  			
+  		}
+
+  		// Everything is loaded including images.
+      	$(window).on("load", function(){
+
+      		// Render the page on modern browser only.
+      		if(renderPage) {
+				// Remove loader
+		      	$('body').addClass('loaded');
+
+		      	// Page transition
+		      	var allPages = $(".tm-section");
+
+		      	// Handle click of "Continue", which changes to next page
+		      	// The link contains data-nav-link attribute, which holds the nav item ID
+		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+			    
+			    if(linkToAnotherPage != null) {
+			    	
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+		      	
+		      	// Hide all pages
+		      	allPages.hide();
+
+		      	$("#tm-section-1").fadeIn();
+
+		     	// Set up background first page
+		     	var bgImg = $("#tmNavLink1").data("bgImg");
+		     	
+		     	$.backstretch("img/" + bgImg, {fade: 500});
+
+		     	// Setup Carousel, Nav, and Nav Toggle
+			    setupCarousel();
+			    setupNav();
+			    setupNavToggle();
+			    setupFooter();
+
+			    // Resize Carousel upon window resize
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    	setupFooter();
+			    });
+      		}	      	
+		});
+
+		</script>
+	</body>
+</html>
+
+{% endblock  %}
